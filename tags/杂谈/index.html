@@ -88,12 +88,12 @@
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://images-1305794303.cos.ap-nanjing.myqcloud.com/wall/7b63159701f33e8261f6b673635fbce1c5e237aab8d480-zfLNNw.jpg"></li>
-          <li class="item" data-background-image="https://images-1305794303.cos.ap-nanjing.myqcloud.com/wall/5d4f74dc38ced9e89f172df48a016fe5ef90c98116211f-xSRWnp.jpg"></li>
-          <li class="item" data-background-image="https://images-1305794303.cos.ap-nanjing.myqcloud.com/wall/320c4a17db954b578f7f6e071346d511.jpeg"></li>
-          <li class="item" data-background-image="https://images-1305794303.cos.ap-nanjing.myqcloud.com/wall/007GYgpfly1gt2sommcepj32yo1o04qq.jpg"></li>
-          <li class="item" data-background-image="https://images-1305794303.cos.ap-nanjing.myqcloud.com/wall/04be9db9f9359c820fa0a6616177c160b9284d80.jpg"></li>
-          <li class="item" data-background-image="https://images-1305794303.cos.ap-nanjing.myqcloud.com/wall/90h917834p0.jpg"></li>
+          <li class="item" data-background-image="https://images-1305794303.cos.ap-nanjing.myqcloud.com/wall/8610686f65be91d334892b08d1393b5410f76eca10c5da-wcLIF5.jpg"></li>
+          <li class="item" data-background-image="https://images-1305794303.cos.ap-nanjing.myqcloud.com/wall/bef232dc659db1bca7e5b3b41a804d0d8d800cbc.jpg"></li>
+          <li class="item" data-background-image="https://images-1305794303.cos.ap-nanjing.myqcloud.com/wall/ed64cc807a08962fca7abcea472bad04f70c750113d127-BkMvV1.jpg"></li>
+          <li class="item" data-background-image="https://images-1305794303.cos.ap-nanjing.myqcloud.com/wall/a49d50893993873690f1e19a25b306862ebea390a19c6f-qwhDEL.jpg"></li>
+          <li class="item" data-background-image="https://images-1305794303.cos.ap-nanjing.myqcloud.com/wall/79794383ee4bfa7eeac6e6c57aa8518922ca496a.jpg"></li>
+          <li class="item" data-background-image="https://images-1305794303.cos.ap-nanjing.myqcloud.com/wall/fe39d862d0414b671a8e8480039b2cdee07917e8.jpg"></li>
         </ul>
       </div>
     </header>
@@ -274,10 +274,46 @@
     </span>
     <span class="author" itemprop="copyrightHolder">heluor @ Yume Shoka</span>
   </div>
-  <div class="powered-by">
-    基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<a href="https://github.com/amehime/hexo-theme-shoka">Shoka</a>
+
+  <span id="sitetime"></span>
+  <script language=javascript>
+    function siteTime(){
+      window.setTimeout("siteTime()", 1000);
+      var seconds = 1000;
+      var minutes = seconds * 60;
+      var hours = minutes * 60;
+      var days = hours * 24;
+      var years = days * 365;
+      var today = new Date();
+      var todayYear = today.getFullYear();
+      var todayMonth = today.getMonth()+1;
+      var todayDate = today.getDate();
+      var todayHour = today.getHours();
+      var todayMinute = today.getMinutes();
+      var todaySecond = today.getSeconds();
+      /*
+      Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
+      year - 作为date对象的年份，为4位年份值
+      month - 0-11之间的整数，做为date对象的月份
+      day - 1-31之间的整数，做为date对象的天数
+      hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
+      minutes - 0-59之间的整数，做为date对象的分钟数
+      seconds - 0-59之间的整数，做为date对象的秒数
+      microseconds - 0-999之间的整数，做为date对象的毫秒数
+          */
+      var t1 = Date.UTC(2022,07,27,12,00,00); //北京时间2018-2-13 00:00:00
+      var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
+      var diff = t2-t1;
+      var diffYears = Math.floor(diff/years);
+      var diffDays = Math.floor((diff/days)-diffYears*365);
+      var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
+      var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
+      var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
+      document.getElementById("sitetime").innerHTML=" 本网站已运行"+/*diffYears+" 年 "+*/diffDays+" 天 "+diffHours+" 小时 "+diffMinutes+" 分钟 "+diffSeconds+" 秒";
+    }
+    siteTime();
+  </script>
   </div>
-</div>
 
       </div>
     </footer>

@@ -88,12 +88,12 @@ Yume Shoka = heluorの小屋 = 按照自己的想法活下去，不必拘束于�
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://images-1305794303.cos.ap-nanjing.myqcloud.com/wall/v2-1a7f2a3ee67824b84f34b5fdfd99acb6_r.jpg"></li>
           <li class="item" data-background-image="https://images-1305794303.cos.ap-nanjing.myqcloud.com/wall/b936dd1a04bbb22e0d163d067e2ecb18_5376263558597882260.jpg"></li>
-          <li class="item" data-background-image="https://images-1305794303.cos.ap-nanjing.myqcloud.com/wall/994ae13f311fe462311653dac897a33509e6214a324499-l8P9gz.jpg"></li>
-          <li class="item" data-background-image="https://images-1305794303.cos.ap-nanjing.myqcloud.com/wall/45c8b6fe6cf4062aab88b6118386e1495c80a09b.jpg"></li>
-          <li class="item" data-background-image="https://images-1305794303.cos.ap-nanjing.myqcloud.com/wall/cd25ee8580a9c0815a9e97345f09a923b935232e46a9c1-swWQAu.jpg"></li>
-          <li class="item" data-background-image="https://images-1305794303.cos.ap-nanjing.myqcloud.com/wall/dc0987a166bb3b5117ebf84c45bbb13a513e6ce7.jpg"></li>
+          <li class="item" data-background-image="https://images-1305794303.cos.ap-nanjing.myqcloud.com/wall/a94c8bd7b24dc336d0913a71be78d7c142b20fcb.jpg"></li>
+          <li class="item" data-background-image="https://images-1305794303.cos.ap-nanjing.myqcloud.com/wall/20210806200352_4db07.jpeg"></li>
+          <li class="item" data-background-image="https://images-1305794303.cos.ap-nanjing.myqcloud.com/wall/006uFLqDgy1gvt6gyckpaj320815ohdt.jpg"></li>
+          <li class="item" data-background-image="https://images-1305794303.cos.ap-nanjing.myqcloud.com/wall/c079d04da43f8d1573e4137aba6d65b840b313ba.jpg"></li>
+          <li class="item" data-background-image="https://images-1305794303.cos.ap-nanjing.myqcloud.com/wall/f71a3a3fc13681ff002b67c0b1b550616011019c3a0943-wnlxRG.jpg"></li>
         </ul>
       </div>
     </header>
@@ -253,10 +253,46 @@ Yume Shoka = heluorの小屋 = 按照自己的想法活下去，不必拘束于�
     </span>
     <span class="author" itemprop="copyrightHolder">heluor @ Yume Shoka</span>
   </div>
-  <div class="powered-by">
-    基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<a href="https://github.com/amehime/hexo-theme-shoka">Shoka</a>
+
+  <span id="sitetime"></span>
+  <script language=javascript>
+    function siteTime(){
+      window.setTimeout("siteTime()", 1000);
+      var seconds = 1000;
+      var minutes = seconds * 60;
+      var hours = minutes * 60;
+      var days = hours * 24;
+      var years = days * 365;
+      var today = new Date();
+      var todayYear = today.getFullYear();
+      var todayMonth = today.getMonth()+1;
+      var todayDate = today.getDate();
+      var todayHour = today.getHours();
+      var todayMinute = today.getMinutes();
+      var todaySecond = today.getSeconds();
+      /*
+      Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
+      year - 作为date对象的年份，为4位年份值
+      month - 0-11之间的整数，做为date对象的月份
+      day - 1-31之间的整数，做为date对象的天数
+      hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
+      minutes - 0-59之间的整数，做为date对象的分钟数
+      seconds - 0-59之间的整数，做为date对象的秒数
+      microseconds - 0-999之间的整数，做为date对象的毫秒数
+          */
+      var t1 = Date.UTC(2022,07,27,12,00,00); //北京时间2018-2-13 00:00:00
+      var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
+      var diff = t2-t1;
+      var diffYears = Math.floor(diff/years);
+      var diffDays = Math.floor((diff/days)-diffYears*365);
+      var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
+      var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
+      var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
+      document.getElementById("sitetime").innerHTML=" 本网站已运行"+/*diffYears+" 年 "+*/diffDays+" 天 "+diffHours+" 小时 "+diffMinutes+" 分钟 "+diffSeconds+" 秒";
+    }
+    siteTime();
+  </script>
   </div>
-</div>
 
       </div>
     </footer>

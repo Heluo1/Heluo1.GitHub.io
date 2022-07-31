@@ -88,12 +88,12 @@
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://images-1305794303.cos.ap-nanjing.myqcloud.com/wall/994ae13f311fe462311653dac897a33509e6214a324499-l8P9gz.jpg"></li>
-          <li class="item" data-background-image="https://images-1305794303.cos.ap-nanjing.myqcloud.com/wall/f71a3a3fc13681ff002b67c0b1b550616011019c3a0943-wnlxRG.jpg"></li>
-          <li class="item" data-background-image="https://images-1305794303.cos.ap-nanjing.myqcloud.com/wall/20220714200626_95d22.jpeg"></li>
-          <li class="item" data-background-image="https://images-1305794303.cos.ap-nanjing.myqcloud.com/wall/807666040d9594384077fc32f7a217a1ebbbfffc3e6ea0-d3h9rL.jpg"></li>
+          <li class="item" data-background-image="https://images-1305794303.cos.ap-nanjing.myqcloud.com/wall/fd461e94bb0bbafd51d919dd31d5747679235a54.png"></li>
+          <li class="item" data-background-image="https://images-1305794303.cos.ap-nanjing.myqcloud.com/wall/e8d4cf7f2d143230ae9aa9d45200b5cf6d9c9e03b0ef99-a5ep8P.jpg"></li>
           <li class="item" data-background-image="https://images-1305794303.cos.ap-nanjing.myqcloud.com/wall/v2-1a7f2a3ee67824b84f34b5fdfd99acb6_r.jpg"></li>
-          <li class="item" data-background-image="https://images-1305794303.cos.ap-nanjing.myqcloud.com/wall/3569378bbc8cb16d789c52f01273aeed86b831ce.jpg"></li>
+          <li class="item" data-background-image="https://images-1305794303.cos.ap-nanjing.myqcloud.com/wall/f71a3a3fc13681ff002b67c0b1b550616011019c3a0943-wnlxRG.jpg"></li>
+          <li class="item" data-background-image="https://images-1305794303.cos.ap-nanjing.myqcloud.com/wall/c028d921e82ed541a0e778062b354e35f2a1d2ae.png"></li>
+          <li class="item" data-background-image="https://images-1305794303.cos.ap-nanjing.myqcloud.com/wall/994ae13f311fe462311653dac897a33509e6214a324499-l8P9gz.jpg"></li>
         </ul>
       </div>
     </header>
@@ -227,15 +227,6 @@
   <li class="item">
     
 <div class="breadcrumb">
-</div>
-
-    <span><a href="/Heluo1.gitHub.io/2022/07/24/hello-world/" title="Hello World">Hello World</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
 <a href="/Heluo1.gitHub.io/categories/%E5%9B%B4%E7%82%89%E5%A4%9C%E8%AF%9D/" title="分类于 围炉夜话">围炉夜话</a>
 <i class="ic i-angle-right"></i>
 <a href="/Heluo1.gitHub.io/categories/%E5%9B%B4%E7%82%89%E5%A4%9C%E8%AF%9D/%E4%B8%96%E7%95%8C/" title="分类于 世界">世界</a>
@@ -256,6 +247,15 @@
     <span><a href="/Heluo1.gitHub.io/2022/07/27/ui/Appreciation%20Room/%E4%B8%80%E6%AC%BE%E6%A3%80%E6%B5%8B%E7%9D%A1%E7%9C%A0%E8%B4%A8%E9%87%8F%E7%9A%84app%E7%95%8C%E9%9D%A2/" title="设计练习-1">设计练习-1</a></span>
   </li>
 
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/Heluo1.gitHub.io/2022/07/24/hello-world/" title="Hello World">Hello World</a></span>
+  </li>
+
   </ul>
 </div>
 <div>
@@ -274,10 +274,46 @@
     </span>
     <span class="author" itemprop="copyrightHolder">heluor @ Yume Shoka</span>
   </div>
-  <div class="powered-by">
-    基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<a href="https://github.com/amehime/hexo-theme-shoka">Shoka</a>
+
+  <span id="sitetime"></span>
+  <script language=javascript>
+    function siteTime(){
+      window.setTimeout("siteTime()", 1000);
+      var seconds = 1000;
+      var minutes = seconds * 60;
+      var hours = minutes * 60;
+      var days = hours * 24;
+      var years = days * 365;
+      var today = new Date();
+      var todayYear = today.getFullYear();
+      var todayMonth = today.getMonth()+1;
+      var todayDate = today.getDate();
+      var todayHour = today.getHours();
+      var todayMinute = today.getMinutes();
+      var todaySecond = today.getSeconds();
+      /*
+      Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
+      year - 作为date对象的年份，为4位年份值
+      month - 0-11之间的整数，做为date对象的月份
+      day - 1-31之间的整数，做为date对象的天数
+      hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
+      minutes - 0-59之间的整数，做为date对象的分钟数
+      seconds - 0-59之间的整数，做为date对象的秒数
+      microseconds - 0-999之间的整数，做为date对象的毫秒数
+          */
+      var t1 = Date.UTC(2022,07,27,12,00,00); //北京时间2018-2-13 00:00:00
+      var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
+      var diff = t2-t1;
+      var diffYears = Math.floor(diff/years);
+      var diffDays = Math.floor((diff/days)-diffYears*365);
+      var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
+      var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
+      var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
+      document.getElementById("sitetime").innerHTML=" 本网站已运行"+/*diffYears+" 年 "+*/diffDays+" 天 "+diffHours+" 小时 "+diffMinutes+" 分钟 "+diffSeconds+" 秒";
+    }
+    siteTime();
+  </script>
   </div>
-</div>
 
       </div>
     </footer>
