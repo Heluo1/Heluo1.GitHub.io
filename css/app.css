@@ -2562,16 +2562,22 @@ main >.inner {
   left: -10%;
 }
 .social .item.github::before {
-  background-color: D61C4E;
+  background-color: #1d1f21;
 }
 .social .item.github i {
-  color: D61C4E;
+  color: #1d1f21;
 }
 .social .item.music::before {
   background-color: #e60026;
 }
 .social .item.music i {
   color: #e60026;
+}
+.social .item.email::before {
+  background-color: #55acd5;
+}
+.social .item.email i {
+  color: #55acd5;
 }
 .social .item:focus i,
 .social .item:hover i {
