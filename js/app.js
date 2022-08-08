@@ -1122,10 +1122,7 @@ const quickBtn = $('#quick');
 const sideBar = $('#sidebar');
 const siteBrand = $('#brand');
 var toolBtn = $('#tool'), toolPlayer, backToTop, goToComment, showContents;
-var angleBtn = $('#angle');
-
 var imgMover = $('#imgs');
-
 var siteSearch = $('#search');
 var siteNavHeight, headerHightInner, headerHight;
 var oWinHeight = window.innerHeight;
@@ -1299,7 +1296,7 @@ const scrollHandle = function (event) {
   var SHOW = window.pageYOffset > headerHightInner;
   var startScroll = window.pageYOffset > 0;
 
-var oVal = Math.round(Math.min(50 * window.pageYOffset / contentVisibilityHeight, 300)) / -5;
+var oVal = Math.round(Math.min(50 * window.pageYOffset / contentVisibilityHeight, 100)) / -5;
 var max = 200 + window.pageYOffset;
 if (oVal > max) {
 	oVal = max;
