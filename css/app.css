@@ -1312,7 +1312,7 @@ body {
 body {
   background: linear-gradient(to top, var(--body-bg-shadow) 0, var(--grey-1) 20%) no-repeat bottom;
   color: var(--text-color);
-  font-family: '仓耳云黑粗体+Google Sans', -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Google Sans', -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 1em;
   line-height: 2;
   -webkit-font-smoothing: antialiased;
@@ -1343,7 +1343,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: '仓耳云黑粗体+Google Sans', '仓耳云黑粗体+Google Sans', '仓耳云黑粗体+Google Sans', '仓耳云黑粗体+Google Sans', -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Google Sans', 'Google Sans', 'Google Sans', 'Google Sans', -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
   font-weight: bold;
   line-height: 1.5;
   margin: 1.25rem 0 0.9375rem;
@@ -1354,7 +1354,7 @@ h3.title,
 h4.title,
 h5.title,
 h6.title {
-  font-family: '仓耳云黑粗体+Google Sans', '仓耳云黑粗体+Google Sans', '仓耳云黑粗体+Google Sans', '仓耳云黑粗体+Google Sans', -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Google Sans', 'Google Sans', 'Google Sans', 'Google Sans', -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 a {
   border: none;
@@ -1418,9 +1418,9 @@ textarea {
   color: var(--text-color);
 }
 @font-face {
-  font-family: '仓耳云黑粗体+Google Sans';
-  src: url("https://tff-1305794303.cos.ap-nanjing.myqcloud.com/W07.eot");
-  src: url("https://tff-1305794303.cos.ap-nanjing.myqcloud.com/W07.eot?#iefix") format('embedded-opentype'), url("https://tff-1305794303.cos.ap-nanjing.myqcloud.com/W07.woff22") format('woff2'), url("https://tff-1305794303.cos.ap-nanjing.myqcloud.com/W07.woff") format('woff'), url("https://tff-1305794303.cos.ap-nanjing.myqcloud.com/W07.ttf") format('truetype'), url("https://tff-1305794303.cos.ap-nanjing.myqcloud.com/W07.svg#ic") format('svg');
+  font-family: 'Google Sans';
+  src: url("../fonts/W07.eot");
+  src: url("../fonts/W07.eot?#iefix") format('embedded-opentype'), url("../fonts/W07.woff2") format('woff2'), url("../fonts/W07.woff") format('woff'), url("../fonts/W07.tff") format('truetype'), url("../fonts/W07.svg#ic") format('svg');
 }
 .ic {
   font-family: "ic" !important;
@@ -2109,7 +2109,7 @@ main >.inner {
   align-items: center;
 }
 #brand .artboard {
-  font-family: 'Fredericka the Great', '仓耳云黑粗体+Google Sans', -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Fredericka the Great', 'Google Sans', -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 3.5em;
   line-height: 1.2;
 }
@@ -2884,7 +2884,7 @@ main >.inner {
   padding: 0 2rem;
 }
 .md {
-  font-family: '仓耳云黑粗体+Google Sans', -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Google Sans', -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
   overflow-wrap: break-word;
   word-wrap: break-word;
 }
@@ -2953,7 +2953,7 @@ main >.inner {
 .post header .meta {
   text-align: center;
   border-top: 0.0625rem dashed var(--grey-9-a1);
-  font-family: '仓耳云黑粗体+Google Sans', -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Google Sans', -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 .post .meta {
   color: var(--grey-5);
@@ -3262,7 +3262,7 @@ main >.inner {
 .article .md .anchor::before,
 .article .md .anchor::after {
   content: "H";
-  font-family: '仓耳云黑粗体+Google Sans', -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Google Sans', -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
   left: -1.875rem;
   top: 1rem;
   width: 1.25rem;
@@ -5216,7 +5216,7 @@ code,
 }
 .links .item .title {
   margin: 0.5rem 0;
-  font-family: '仓耳云黑粗体+Google Sans', '仓耳云黑粗体+Google Sans', '仓耳云黑粗体+Google Sans', '仓耳云黑粗体+Google Sans', -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Google Sans', 'Google Sans', 'Google Sans', 'Google Sans', -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
   font-weight: bold;
   color: var(--bg-color);
   border: none;
