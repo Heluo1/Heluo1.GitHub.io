@@ -1296,7 +1296,7 @@ const scrollHandle = function (event) {
   var SHOW = window.pageYOffset > headerHightInner;
   var startScroll = window.pageYOffset > 0;
 
-var oVal = Math.round(Math.min(50 * window.pageYOffset / contentVisibilityHeight, 100)) / -5;
+var oVal = Math.round(Math.min(50 * window.pageYOffset / contentVisibilityHeight, 300)) / -5;
 var max = 200 + window.pageYOffset;
 if (oVal > max) {
 	oVal = max;
